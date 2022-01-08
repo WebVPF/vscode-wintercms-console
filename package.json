@@ -1,0 +1,204 @@
+{
+	"name": "wintercms-console",
+	"displayName": "Winter CMS Console",
+	"version": "0.0.1",
+	"publisher": "WebVPF",
+	"description": "Keyboard shortcuts for console commands Winter CMS",
+	"categories": [
+		"Keymaps",
+		"Snippets"
+	],
+	"icon": "images/logo.png",
+	"engines": {
+		"vscode": "^1.55.0"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"keywords": [
+		"winter cms",
+		"wintercms"
+	],
+	"contributes": {
+		"configuration": {
+			"title": "Winter CMS",
+			"type": "object",
+			"properties": {
+				"wintercms.console.authorName": {
+					"type": "string",
+					"default": "AuthorName",
+					"description": "%wintercms.config.authorName.desc%"
+				},
+				"wintercms.console.pluginName": {
+					"type": "string",
+					"default": "PluginName",
+					"description": "%wintercms.config.pluginName.desc%"
+				}
+			}
+		},
+		"keybindings":[
+			{
+				"key": "ctrl+delete",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan cache:clear"
+				}
+			},
+			{
+				"key": "ctrl+u",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "composer update"
+				}
+			},
+			{
+				"key": "ctrl+shift+u",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan winter:up"
+				}
+			},
+			{
+				"key": "ctrl+w",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "composer create-project wintercms/winter name"
+				}
+			},
+			{
+				"key": "ctrl+i",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan winter:install"
+				}
+			},
+			{
+				"key": "ctrl+shift+delete",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan winter:fresh"
+				}
+			},
+			{
+				"key": "ctrl+shift+l",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan plugin:list"
+				}
+			},
+			{
+				"key": "ctrl+shift+d",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan winter:down"
+				}
+			},
+			{
+				"key": "ctrl+shift+r",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan plugin:refresh ${config:wintercms.console.authorName}.${config:wintercms.console.pluginName}"
+				}
+			},
+			{
+				"key": "ctrl+shift+alt+a",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan winter:util compile assets"
+				}
+			},
+			{
+				"key": "ctrl+shift+alt+g",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan winter:util compile lang"
+				}
+			},
+			{
+				"key": "ctrl+shift+alt+j",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan winter:util compile js"
+				}
+			},
+			{
+				"key": "ctrl+shift+alt+l",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan winter:util compile less"
+				}
+			},
+
+
+			{
+				"key": "alt+t",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan create:theme mytheme"
+				}
+			},
+			{
+				"key": "alt+p",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan create:plugin ${config:wintercms.console.authorName}.${config:wintercms.console.pluginName}"
+				}
+			},
+			{
+				"key": "alt+c",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan create:component ${config:wintercms.console.authorName}.${config:wintercms.console.pluginName} ComponentName"
+				}
+			},
+			{
+				"key": "alt+m",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan create:model ${config:wintercms.console.authorName}.${config:wintercms.console.pluginName} ModelName"
+				}
+			},
+			{
+				"key": "alt+s",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan create:settings ${config:wintercms.console.authorName}.${config:wintercms.console.pluginName} SettingsName"
+				}
+			},
+			{
+				"key": "alt+shift+c",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan create:controller ${config:wintercms.console.authorName}.${config:wintercms.console.pluginName} Names"
+				}
+			},
+			{
+				"key": "alt+f",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan create:formwidget ${config:wintercms.console.authorName}.${config:wintercms.console.pluginName} CategorySelector"
+				}
+			},
+			{
+				"key": "alt+r",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan create:reportwidget ${config:wintercms.console.authorName}.${config:wintercms.console.pluginName} TopPosts"
+				}
+			},
+			{
+				"key": "alt+k",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan create:command ${config:wintercms.console.authorName}.${config:wintercms.console.pluginName} MyCommand"
+				}
+			}
+		]
+	},
+	"bugs": {
+		"url": "https://github.com/WebVPF/vscode-wintercms-console/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/WebVPF/vscode-wintercms-console.git"
+	},
+	"homepage": "https://github.com/WebVPF/vscode-wintercms-console"
+}

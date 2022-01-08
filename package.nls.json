@@ -1,0 +1,4 @@
+{
+	"wintercms.config.authorName.desc": "Specify the developer's namespace. This will be used in commands where the developer's name is specified. For instance: WebVPF",
+	"wintercms.config.pluginName.desc": "Specify the plugin namespace. Default: PluginName"
+}
