@@ -17,7 +17,7 @@ php artisan create:component AuthorName.PluginName NameComponent
 
 but the command itself won't run. You can edit this line as you need and press the <kbd>Enter</kbd> key to run the command.
 
-## Параметры
+## Parameters
 
 In VSCode settings you can set your own values for `authorName` and `PluginName`. To do this, go to Options <kbd>Ctrl</kbd> + <kbd>,</kbd> and enter in the search `wintercms`.
 
