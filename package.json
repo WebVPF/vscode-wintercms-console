@@ -171,6 +171,13 @@
 				}
 			},
 			{
+				"key": "alt+j",
+				"command": "workbench.action.terminal.sendSequence",
+				"args": {
+					"text": "php artisan create:job ${config:wintercms.console.authorName}.${config:wintercms.console.pluginName} JobName"
+				}
+			},
+			{
 				"key": "alt+f",
 				"command": "workbench.action.terminal.sendSequence",
 				"args": {

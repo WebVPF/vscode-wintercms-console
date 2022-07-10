@@ -48,6 +48,7 @@ Keyboard shortcuts                               | Command
 <kbd>Alt</kbd> + <kbd>M</kbd>                    | `create:model`
 <kbd>Alt</kbd> + <kbd>S</kbd>                    | `create:settings`
 <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> | `create:controller`
+<kbd>Alt</kbd> + <kbd>J</kbd>                    | `create:job`
 <kbd>Alt</kbd> + <kbd>F</kbd>                    | `create:formwidget`
 <kbd>Alt</kbd> + <kbd>R</kbd>                    | `create:reportwidget`
 <kbd>Alt</kbd> + <kbd>K</kbd>                    | `create:command`

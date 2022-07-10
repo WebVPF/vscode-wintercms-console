@@ -34,8 +34,6 @@ php artisan create:component AuthorName.PluginName NameComponent
 php artisan create:component WebVPF.Plug NameComponent
 ```
 
-<!-- Редактор VSCode позволяет делать настройки Пользователь / Рабочая область.  -->
-
 ## Сочетания клавиш
 
 ### Scaffolding
@@ -56,6 +54,7 @@ php artisan create:component WebVPF.Plug NameComponent
 <kbd>Alt</kbd> + <kbd>M</kbd>                    | `create:model`
 <kbd>Alt</kbd> + <kbd>S</kbd>                    | `create:settings`
 <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> | `create:controller`
+<kbd>Alt</kbd> + <kbd>J</kbd>                    | `create:job`
 <kbd>Alt</kbd> + <kbd>F</kbd>                    | `create:formwidget`
 <kbd>Alt</kbd> + <kbd>R</kbd>                    | `create:reportwidget`
 <kbd>Alt</kbd> + <kbd>K</kbd>                    | `create:command`
