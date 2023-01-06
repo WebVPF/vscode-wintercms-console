@@ -73,4 +73,4 @@ Keyboard shortcuts                                  | Command
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>J</kbd> | `php artisan winter:util compile js`
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>L</kbd> | `php artisan winter:util compile less`
 
-Documentation [Command Line Interface](https://wintercms.com/docs/console/commands) Winter CMS
+Documentation [Command Line Interface](https://wintercms.com/docs/console/introduction#command-list) Winter CMS
